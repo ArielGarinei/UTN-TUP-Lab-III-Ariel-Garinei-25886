@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es" xml:lang="es" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Ariel Garinei</title>
+	<meta charset="utf-8"/>	
+	<link rel="stylesheet" href="css/style.css">
+	
+</head>
+<body>
+	<div>
+		<img src="images/logo2.png" alt="logo_utn" class="pull-left">
+		<h2 class="pull-right">Laboratorio III–Trabajo Integrador 2020 B</h2>
+		
+	</div>
+	<div class="clear_float"></div>
+	
+	<form>
+		<fieldset>
+			<legend>Información personal</legend>
+			<p><label>Nombre: <input type="text" name="nombre" id="student_name" required></label></p>
+		</fieldset>
+		
+		<br />
+		
+		<fieldset class = "fieldset_question">
+			<h3>Cuestionario</h3>
+			
+			<div id="p1" style="display: block;">
+
+				<p class="pregunta">¿Cuál es la descripción que crees que define mejor el concepto 'clase' en la programación orientada a objetos?</p>
+					<div class="questions">
+						<input type="radio" name="answer1" value="1" checked><span class="respuesta">Es un concepto similar al de 'array'</span><br />
+						<input type="radio" name="answer1" value="2" ><span class="respuesta">Es un tipo particular de variable</span><br />
+						<input type="radio" name="answer1" value="3"><span class="respuesta">Es un modelo o plantilla a partir de la cual creamos objetos</span><br />
+						<input type="radio" name="answer1" value="4"><span class="respuesta">Es una categoria de datos ordenada secuencialmente</span><br />
+						<button class="pull-right next" id="s1">Siguiente</button>
+					</div>
+				
+				<div class="clear_float"></div>
+			</div>	
+			<div id="p2" class="hide">
+				<p class="pregunta">¿Qué elementos crees que definen a un objeto?</p>
+					<div class="questions">
+						<select id="answer2">
+
+							<option value="1">Sus cardinalidad y su tipo</option>
+							<option value="2">Sus atributos y sus métodos</option>
+							<option value="3">La forma en que establece comunicación e intercambia mensajes</option>
+							<option value="4">Su interfaz y los eventos asociados</option>
+
+						</select>
+						<br /><br />
+						<button class="pull-right next" id="s2">Siguiente</button>
+						<button class="pull-left prev" id="a2">Anterior</button>
+					</div>
+				
+			</div>			
+			<div id="p3" class="hide">
+
+				<p class="pregunta">¿Qué código de los siguientes tiene que ver con la herencia?</p>
+					<div class="questions">
+						<input type="radio" name="answer3" value="1" checked><span class="respuesta">public class Componente extends Producto</span><br />
+						<input type="radio" name="answer3" value="2"><span class="respuesta">public class Componente inherit Producto</span><br />
+						<input type="radio" name="answer3" value="3"><span class="respuesta">public class Componente implements Producto</span><br />
+						<input type="radio" name="answer3" value="4"><span class="respuesta">public class Componente belong to Producto</span><br />
+						<br />
+						<button class="pull-right next" id="s3">Siguiente</button>
+						<button class="pull-left prev" id="a3">Anterior</button>
+					</div>
+					
+			</div>
+			
+				<div id="p4" class="hide">
+
+				<p class="pregunta">¿Qué significa instanciar una clase?</p>
+					<div class="questions">
+						<input type="radio" name="answer4" value="1" checked><span class="respuesta">Duplicar una clase</span><br />
+						<input type="radio" name="answer4" value="2"><span class="respuesta">Eliminar una clase</span><br />
+						<input type="radio" name="answer4" value="3"><span class="respuesta">Crear un objeto a partir de la clase</span><br />
+						<input type="radio" name="answer4" value="4"><span class="respuesta">Conectar dos clases entre sí</span><br />
+						<br />
+						<button class="pull-right next" id="s4">Siguiente</button>
+						<button class="pull-left prev" id="a4">Anterior</button>
+					</div>
+					
+			</div>
+			
+			
+				<div id="p5" class="hide">
+
+				<p class="pregunta">¿Qué es una excepción?</p>
+					<div class="questions">
+						<input type="radio" name="answer5" value="1" checked><span class="respuesta">Un error que lanza un método cuando algo va mal</span><br />
+						<input type="radio" name="answer5" value="2"><span class="respuesta">Un objeto que no puede ser instanciado</span><br />
+						<input type="radio" name="answer5" value="3"><span class="respuesta">Un bucle que no finaliza</span><br />
+						<input type="radio" name="answer5" value="4"><span class="respuesta">Un tipo de evento muy utilizado al crear interfaces</span><br />
+						<br />
+						<button class="pull-left prev" id="a5">Anterior</button>
+					</div>
+					
+			</div>
+			
+			<div id="finish" class="hide">
+
+				<p class="pregunta">¿Qué código de los siguientes tiene que ver con la herencia?</p>
+				<span id="r1.1" class="respuesta">Es un concepto similar al de 'array'</span><br />
+				<span id="r1.2" class="respuesta">Es un tipo particular de variable</span><br />
+				<span id="r1.3" class="respuesta right_answer">Es un modelo o plantilla a partir de la cual creamos objetos</span><br />
+				<span id="r1.4" class="respuesta">Es una categoria de datos ordenada secuencialmente</span><br />
+				<br />
+				<p class="pregunta">¿Qué elementos crees que definen a un objeto?</p>
+				<span id="r2.1" class="respuesta">Sus cardinalidad y su tipo</span><br />
+				<span id="r2.2" class="respuesta right_answer">Sus atributos y sus métodos</span><br />
+				<span id="r2.3" class="respuesta">La forma en que establece comunicación e intercambia mensajes</span><br />
+				<span id="r2.4" class="respuesta">Su interfaz y los eventos asociados</span><br />
+				<br />
+				<p class="pregunta">¿Qué código de los siguientes tiene que ver con la herencia?</p>
+				<span id="r3.1" class="respuesta right_answer">public class Componente extends Producto</span><br />
+				<span id="r3.2" class="respuesta">public class Componente inherit Producto</span><br />
+				<span id="r3.3" class="respuesta">public class Componente implements Producto</span><br />
+				<span id="r3.4" class="respuesta">public class Componente belong to Producto</span><br />
+				<br />
+				<p class="pregunta">¿Qué significa instanciar una clase?</p>
+				<span id="r4.1" class="respuesta">Duplicar una clase</span><br />
+				<span id="r4.2" class="respuesta">Eliminar una clase</span><br />
+				<span id="r4.3" class="respuesta right_answer">Crear un objeto a partir de la clase</span><br />
+				<span id="r4.4" class="respuesta">Conectar dos clases entre sí</span><br />
+				<br />
+				<p class="pregunta">¿Qué es una excepción?</p>
+				<span id="r5.1" class="respuesta right_answer">Un error que lanza un método cuando algo va mal</span><br />
+				<span id="r5.2" class="respuesta">Un objeto que no puede ser instanciado</span><br />
+				<span id="r5.3" class="respuesta">Un bucle que no finaliza</span><br />
+				<span id="r5.4" class="respuesta">Un tipo de evento muy utilizado al crear interfaces</span><br />
+				<br /><br />
+				
+				<h2 id="grade">Nota</h2>
+			
+			</div>
+			
+			
+			<div class="clear_float"></div>
+			<br/>
+			<input class="hide" type="submit" id="send" value="Enviar información">
+
+			
+		</fieldset>
+	</form>
+	
+	
+	<script src="js/functions.js"></script>
+</body>
+</html>
